@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+.name {
+  font-size: 75px;
+  color: #ffffff;
+  font-size: 75px;
+  font-weight: 700;
+  color: #ff30ff;
+  text-shadow: 0 0 5px #ff30ff, 0 0 10px #ff30ff, 0 0 15px #ff30ff;
+}
+
+body{
+  background: linear-gradient(to right, #373c46, #000000);
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  position: relative;
+}
+
+header nav {
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 12;
+}
+
+.navbar {
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content:right;
+}
+
+/* ✅ Navigation Menu */
+nav .menu {
+  display: flex;
+}
+
+nav .menu li {
+  list-style: none;
+  margin: 0 10px;
+  position: relative;
+}
+
+nav .menu a {
+  color: #2c3e50;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px 0;
+  position: relative;
+  display: inline-block;
+}
+
+nav .menu a:hover {
+  color: #09ff00;
+}
+
+nav .menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #e100ff; 
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav .menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ✅ Hamburger Menu Styling */
+.hamburger {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* ✅ Main Content Styling */
+.text-content {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 12;
+  text-align: center;
+}
+
+.typing-text {
+
+  color: #dc3cde;
+  font-size: 30px;
+}
+
+header .text-content .text {
+  font-size: 27px;
+  color: #2c3350;
+}
+
+header .text-content .name {
+  font-family: "Poppins", serif;
+  color: #2c3350;
+  font-size: 75px;
+  font-weight: 600;
+  -webkit-text-stroke: 2px #ffffff; 
+}
+
+header .text-content .job {
+  font-size: 30px;
+  color: #2c3350;
+}
+
+.text-content .typing-text {
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #391431;
+  animation: typing 5s steps(15) infinite;
+}
+
+@keyframes typing {
+  0% { width: 0ch; }
+  50% { width: 15ch; }
+  100% { width: 0ch; }
+}
+.text-content .buttons button {
+  margin: 10px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #000000;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ff7eb3, #ff30ff);
+  box-shadow: 0 4px 15px rgba(255, 48, 255, 0.4);
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-content .buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 48, 255, 0.6);
+}
+
+.text-content .buttons button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.5s;
+}
+
+.text-content .buttons button:hover::before {
+  left: 100%;
+}
+
+.content .boy img {
+  position: absolute;
+  left: 50px;
+  height: 95%;
+  bottom: 0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+header .media-icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.media-icons a {
+  margin-top: 8px;
+  font-size: 25px;
+  text-decoration: none;
+  opacity: 0.7;
+  color: #2c3350;
+  transition: all 0.3s ease;
+}
+
+.media-icons a:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* ✅ Social Media Hover Effects */
+.media-icons a:nth-child(1):hover { color: #25D366; }
+.media-icons a:nth-child(2):hover { color: #0A66C2; }
+.media-icons a:nth-child(3):hover { color: #171515; }
+.media-icons a:nth-child(4):hover { color: #4c70ff; }
+
+/* ✅ Responsive Styles */
+
+/* ✅ About Section Styling */
+/* ✅ About Section Styling */
+/* ✅ About Section Styling */
+#about {
+  color: #2c3e50;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 1px;
+  background: linear-gradient(to right, #ffffff, #2c3350, #ffffff);
+  background-size: 200% 100%;
+  animation: light-sweep 4s infinite linear;
+}
+
+#about .email-container {
+  position: absolute;
+  top: -15px;
+  right: 5%;
+  overflow: visible;
+}
+
+#about .email {
+  display: inline-block;
+  color: #2c3350;
+  font-family: "Satisfy", serif;
+  font-size: 20px;
+  position: relative;
+  white-space: nowrap;
+}
+
+#about .email::before {
+  content: "sarveshpatkar2810@gmail.com";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  clip-path: inset(0 100% 0 0);
+  animation: light-pass 8s infinite linear;
+}
+
+@keyframes light-sweep {
+  0% { background-position: -100% 0; }
+  100% { background-position: 100% 0; }
+}
+
+@keyframes light-pass {
+  0% { clip-path: inset(0 100% 0 0); }
+  100% { clip-path: inset(0 0 0 0); }
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* ✅ Section Title */
+.sub-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #e100ff; /* Highlight color */
+}
+
+/* ✅ Tab Titles */
+.tab-titles {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.tab-links {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: rgba(44, 62, 80, 0.1);
+  transition: 0.3s ease-in-out;
+  color: #2c3e50;
+  border: 2px solid transparent;
+}
+
+.tab-links:hover, .tab-links.active {
+  background: #e100ff;
+  color: #fff;
+  border: 2px solid #e100ff;
+  transform: scale(1.05);
+}
+
+/* ✅ Tab Content */
+.tab-contents {
+  display: none;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.tab-contents.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ✅ Experience & Education List */
+.tab-contents ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  max-width: 500px;
+}
+
+.tab-contents ul li {
+  font-size: 18px;
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(44, 62, 80, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tab-contents ul li:hover {
+  transform: scale(1.05);
+  background: #8f11b2;
+  color: white;
+}
+
+/* ✅ Fade Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      width: 30%;
+  }
+
+
+  .tab-links {
+      width: 30%;
+      text-align: center;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .navbar .menu.active {
+    display: flex;
+  }
+
+  .navbar .menu a {
+    color: #fff;
+    font-size: 18px;
+  }
+  .container {
+    width: 95%;
+}
+
+.sub-title {
+    font-size: 30px;
+}
+
+#typing-text {
+    font-size: 16px;
+}
+}
+
+/* ✅ Mobile View */
+@media (max-width: 600px) {
+  .navbar .menu {
+    display: none;
+    width:70%;
+    background: #000000;
+  }
+
+  .navbar .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+  header .text-content .text {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #2c3350;
+  }
+  .content .boy img{
+    left: 20px;
+    height:80%
+
+  }
+  nav .menu {
+    margin-top: -10px;
+  }
+  
+.logo img {
+  width: 100px;
+}
+.sub-title {
+  font-size: 28px;
+}
+
+.tab-links {
+  font-size: 18px;
+  padding: 8px 16px;
+}
+#about::before{
+ width: 48%;
+}
+
+#about::after {
+  top: -13px;
+  left: 50%;
+}
+}/* Experience Item Styling */
+.experience-item {
+
+  background: rgba(44, 62, 80, 0.2);
+  border-left: 5px solid #e100ff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+/* Subtle Neon Glow Hover Effect */
+.experience-item:hover {
+  background: rgba(225, 0, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px rgba(225, 0, 255, 0.3);
+}
+
+/* Experience Title */
+.experience-item li {
+  list-style: none;
+   font-size: 1px;
+  font-weight: bold;
+  color: #e100ff;
+}
+
+/* Company & Duration */
+.experience-item span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Experience Details */
+.experience-details {
+  display: flex;
+  flex-direction: column;  /* Change to column layout */
+  align-items: center;  /* Center align items */
+  gap: 10px;  /* Reduce spacing */
+  text-align: center;  /* Center text */
+}
+
+.experience-details img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0px 0px 10px rgba(225, 0, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.experience-item:hover .experience-details img {
+  transform: scale(1.1);
+}
+
+/* Experience Description */
+.experience-details ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+.experience-details ul li {
+  font-weight: normal;
+  font-size: 10px;
+  color: #ccc;
+  margin-top: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.experience-item:hover .experience-details ul li {
+  color: #ffffff;
+}
+
+/* ✅ Improved Timeline Effect */
+.experience-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 15px;
+  width: 15px;
+  height: 15px;
+  background: #e100ff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(225, 0, 255, 0.7);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Timeline Glow on Hover */
+.experience-item:hover::before {
+  transform: scale(1.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .experience-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .experience-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .experience-details img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .experience-details ul li {
+    font-size: 12px;
+  }
+}

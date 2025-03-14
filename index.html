@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sarvesh Patkar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="navbar">
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="content">
+
+        <div class="text-content">
+            <div class="text">Hello, It's Me</div>
+            <div class="name">Sarvesh Patkar</div>
+            <div class="job">
+                <span>and I'm a </span>
+                <span class="typing-text"></span>
+            </div>
+            
+            <div class="buttons">
+                <button>Download CV</button>
+            </div>                                
+            
+        </div>
+        <div class="boy">
+            <img src="assets/my.png" alt="Profile Image">
+        </div>
+    </div>
+
+    <div class="media-icons">
+
+        <a href="#"><i class="fab fa-whatsapp"></i></a>  
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a> 
+        <a href="#"><i class="fab fa-twitter"></i></a>
+
+    </div>
+</header>
+
+
+<section id="about">
+    
+<div class="email-container">
+    <span class="email">sarveshpatkar2810@gmail.com</span>
+  </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p id="typing-text">
+                    I am a passionate developer who loves turning ideas into functional and efficient solutions. With a strong technical background, I specialize in designing, developing, and optimizing applications that improve user experience and business processes.
+
+                    Beyond coding, I am also deeply interested in human resources and how technology can enhance workplace dynamics. From automating HR processes to building tools that improve employee engagement, I enjoy leveraging my development skills to create innovative, people-focused solutions.
+                    
+                    Whether it’s writing clean and scalable code, solving complex technical challenges, or integrating tech-driven HR solutions, I am always excited to push the boundaries of innovation.
+                    
+                    Let’s connect and build something impactful!
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>                    
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <div class="experience-item">
+                            <li><span>Lucia Enterprise - Present</span><br>Human Resources</li>
+                            <div class="experience-details">
+                       
+                                <ul>
+                                    <img src="assets/lucia.png" alt="Lucia Logo">
+                                    <li>I actively screen candidates, communicate with them to understand their career interests and expectations, coordinate with clients to align candidate profiles with hiring needs, schedule interviews efficiently, and maintain long-term professional relationships to ensure a seamless recruitment process.</li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <div class="experience-item">
+                            <li><span>Bharat Intern - 2024</span><br>Web Development Internship</li>
+                            <div class="experience-details">
+                                
+                                <ul>
+                                    <img src="assets/bharat.png" alt="Bharat Intern Logo">
+                                    <li>I worked on front-end development, utilizing JavaScript and Bootstrap to create responsive websites that ensure a seamless user experience across different devices.</li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <div class="experience-item">
+                            <li><span>CodSoft - 2024</span><br>Web Development Internship</li>
+                            <div class="experience-details">
+                                <ul>
+                                    <img src="assets/codsoft.png" alt="CodSoft Logo">
+                                    <li>I worked on PHP and MySQL development, implementing CRUD operations and enhancing authentication and security measures to ensure robust and secure web applications.</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>BE-Computer</li>
+                        <li><span>2018-2019</span><br>HSC</li>
+                        <li><span>2016-2017</span><br>SSC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+ 
